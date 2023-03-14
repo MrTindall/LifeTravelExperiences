@@ -1,0 +1,55 @@
+.menu {
+    max-width: 2048px;
+    margin: 0  auto;
+}
+
+nav {
+    background-color: #1e610c;
+}
+
+.menu .buttons a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+    background-color: #1e610c;
+}
+
+nav {
+    font-size: 0;
+}
+
+.menu .buttons a:hover {
+    background-color: #aa620f;
+}
+.menu .buttons:visited {
+    color:#FFFFFF
+}
+
+.menu .buttons a {
+    transition: background-color .33s;
+}
+
+.buttons {
+    max-width: fit-content;
+
+}
+
+.buttons.center {
+    margin: 0 auto;
+}
+.buttons.right {
+    margin-left: auto;
+    margin-right: 0;
+}
+.buttons.full {
+    display: flex;
+    max-width: 100%;
+}
+
+.buttons.full a {
+    flex-grow: 1;
+    text-align: center;
+}

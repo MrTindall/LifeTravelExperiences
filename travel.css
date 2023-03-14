@@ -1,0 +1,182 @@
+* {box-sizing: border-box;}
+
+body
+{
+    background-color: #ecf1a0;
+    color: #1b7006;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+#wrapper
+{
+    padding: 2.5em;
+    background-color: #F5F5F5;
+    min-width: 300px;
+    max-width: 2048px;
+}
+
+header
+{
+    background-color: #be7c31;
+    background-color: 100% 100%;
+    background-image: url(mountain2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 50%;
+    color: #be7c31;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    font-size: 250%;
+    min-height: 300px;
+    text-align: center;   
+}
+header {font-size: 0;}
+
+.home
+{
+    height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+}
+
+.content
+{
+    height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+}
+
+header a{text-decoration: none;}
+header a:link{color:#FFFFFF}
+header a:visited{color:#ffffff}
+header a:hover{color:#be7c31}
+
+h2
+{
+    margin: 0;
+    text-align: left;
+}
+ul {
+    list-style-position: inside;
+}
+
+#section
+{
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+#futurehero
+{
+    height: 600px;
+    background-size: contain;
+    background-image: url(mountfuji.jpg);
+    background-color: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+}
+
+#cavehero
+{
+    height: 600px;
+    background-size: contain;
+    background-image: url(cave.jpg);
+    background-color: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+}
+
+#flow
+{
+    flex-direction: row;
+    flex-flow: row nowrap;
+}
+
+dd {font-size: 90%;}
+
+dt {font-weight: bold;}
+
+footer
+{
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    clear: right;
+}
+
+table 
+{
+    border: 1px solid #40407A;
+    margin-bottom: 1em;
+    min-width: 400px;
+    border-collapse: collapse;
+}
+td 
+{
+    padding: 0.5em;
+    border: 1px solid #40407A;
+}
+tr
+{
+    padding: 0.5em;
+    border: 1px #40407A;
+}
+tr:nth-of-type(even){background-color: #D7E8E9;}
+caption 
+{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+form 
+{
+    display:flex;
+    flex-flow:column nowrap;
+}
+input, datalist textarea {margin-bottom: 0.5em;}
+.center-text {text-align: center;}
+p {text-align: left;}
+
+li 
+{
+    text-align: left;
+}
+@media(min-width: 1024px)
+{
+    header {font-size: 150%;}
+       .home 
+    {
+        height: 50vh;
+        padding-top: 5em;
+        padding-left: 8em;
+    }
+    .content 
+    {
+        height: 30vh;
+        padding-top: 2em;
+        padding-left: 8em;
+    }
+    #wrapper
+    {
+        margin: auto;
+        width: 80%;
+    }
+    form {
+        width: 60%;
+        max-width: 40em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 9em 1fr;
+    }
+    input[type="submit"] {
+        grid-column: 2/3;
+        width: 9em;
+        margin-left: 0;
+    }
+}
